@@ -24,7 +24,7 @@
     "release": "standard-version --sign",
     "test": "cross-env BABEL_OUTPUT=commonjs jest",
     "codecov": "codecov",
-    "start": "webpack-dev-server --inline --content-base examples/",
+    "start": "webpack-dev-server --devtool eval-source-map --colors --hot --inline --content-base examples/",
     "website": "run-s website:clean website:build",
     "website:clean": "rimraf examples/dist",
     "website:build": "cross-env NODE_ENV=production webpack"

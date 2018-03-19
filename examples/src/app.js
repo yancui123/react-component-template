@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Block from 'react-component-template';// eslint-disable-line
-import 'react-component-template/style/component.css';// eslint-disable-line
-
+import {Header,Block} from '../../src/index.js';// eslint-disable-line
+import '../../style/header.less';// eslint-disable-line
 ReactDOM.render(
   <div className="component-template">
+    <Header />
     <Block />
   </div>,
-  document.getElementById('example'),
+  document.getElementById('header-wrap'),
 );

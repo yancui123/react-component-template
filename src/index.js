@@ -1,3 +1,6 @@
 import Block from './components/Block';
-
-export default Block;
+import Header from './components/Header'
+export {
+  Block,
+  Header
+};
